@@ -10,6 +10,7 @@ body{
     background-color: black;
 }
 
+/*----------sidebar----------*/
 .sidebar{
     background-color: #ffffff;
     width: max-content;
@@ -94,3 +95,95 @@ body{
 .sidebar_hide{
     overflow: hidden;
 }
+
+/*----------Card----------*/
+
+@font-face {
+    font-family: 'Mooncake';
+    src: url(/Portafolio/Fonts/moodcake/Moodcake.ttf) format('trutype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.card{
+    width: 324;
+    height: 204;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    display: flex;
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d;
+    border: 1px solid #333;
+    background: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0)), url('/Portafolio/img/eyeOpen.svg');
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 55%;
+    background-blend-mode: lighten;
+}
+
+.card:hover {
+      transform: rotateY(10deg) rotateX(4deg);
+    }
+
+    .photo {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .photo img {
+      width: 130px;
+      height: 130px;
+      border-radius: 15px;
+      object-fit: cover;
+    }
+
+    .info {
+      flex: 2;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .info h1 {
+      font-size: 2.2em;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .datos {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1em;
+    }
+
+    .title {
+      margin-top: 10px;
+      font-size: 1em;
+    }
+
+    .title span {
+      background: #ffeb8a;
+      font-weight: bold;
+      padding: 2px 6px;
+      border-radius: 5px;
+      font-family: 'Comic Sans MS', cursive;
+      margin-right: 5px;
+    }
+
+    .qr-firm {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-top: auto;
+    }
+
+    .qr img {
+      height: 60px;
+    }
+
+
