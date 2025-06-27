@@ -99,91 +99,135 @@ body{
 /*----------Card----------*/
 
 @font-face {
-    font-family: 'Mooncake';
-    src: url(/Portafolio/Fonts/moodcake/Moodcake.ttf) format('trutype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Mooncake';
+  src: url(/Fonts/moodcake/Moodcake.ttf);
+  font-weight: normal;
+  font-style: normal;
 }
 
 .card{
-    width: 324;
-    height: 204;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
-    display: flex;
-    transition: transform 0.6s ease;
-    transform-style: preserve-3d;
-    border: 1px solid #333;
-    background: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0)), url('/Portafolio/img/eyeOpen.svg');
-    background-repeat: no-repeat;
-    background-position: center right;
-    background-size: 55%;
-    background-blend-mode: lighten;
+  width: 500px;
+  height: 285px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 20px 50px rgba(255, 255, 255, 0.3);
+  
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+  border: 1px solid #333;
+  background: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0)), url('/Portafolio/img/eyeOpen.svg');
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 55%;
+  background-blend-mode: lighten;
+  display: grid;
+  grid-template-columns: 2fr 150px 150px;
+  grid-template-rows: 100px 1fr 1fr 1fr 0.5fr;
 }
 
 .card:hover {
-      transform: rotateY(10deg) rotateX(4deg);
+      transform: rotateY(20deg) rotateX(20deg);
     }
 
     .photo {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      grid-row: 1;
+      grid-column: 1;
+      text-align: center;
       padding: 20px;
     }
 
     .photo img {
-      width: 130px;
-      height: 130px;
+      width: 150px;
+      height: 150px;
       border-radius: 15px;
       object-fit: cover;
     }
 
-    .info {
-      flex: 2;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+    .info-name {
+      font-family: 'Mooncake';
+      grid-row: 1;
+      grid-column: 2/3;
+      font-size: 1.7em;
+      width: auto;
+      text-align: center;
+      margin: auto;
+      white-space: nowrap;
     }
 
-    .info h1 {
-      font-size: 2.2em;
-      margin-bottom: 5px;
+    .info{
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    .info-age{
+      grid-row: 2;
+      grid-column: 2;
+    }
+
+    .info-hobby{
+      grid-row: 2;
+      grid-column: 3;
+    }
+
+    .info-title{
+      grid-row: 3;
+      grid-column: 2;
+    }
+    
+    .info-title-sticker{
+      position: relative;
+      width: 100px; /* ajusta según tamaño de la cinta */
+      height: 40px;
+      grid-column: 2/3; /* columna de la derecha */
+      grid-row: 2;     /* misma fila del título */
+      justify-self: end; /* alinea al inicio */
+      padding-left: 1rem;
+      padding-top: 1.5rem;
+    }
+
+    .info-title-sticker img{
+      width: 70px;
+      rotate: -120deg;
+    }
+
+    .info-title-sticker span{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 180%);
       font-weight: bold;
-    }
-
-    .datos {
-      display: flex;
-      justify-content: space-between;
-      font-size: 1em;
-    }
-
-    .title {
-      margin-top: 10px;
-      font-size: 1em;
-    }
-
-    .title span {
-      background: #ffeb8a;
-      font-weight: bold;
-      padding: 2px 6px;
-      border-radius: 5px;
+      color: #333;
+      font-size: 0.9em;
       font-family: 'Comic Sans MS', cursive;
-      margin-right: 5px;
+      z-index: 2;
+      white-space: nowrap;
+    }
+
+    .info-place{
+      grid-column: 3;
+      grid-row: 3;
     }
 
     .qr-firm {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
+      
       margin-top: auto;
     }
 
     .qr img {
-      height: 60px;
+      height: 50px;
+    }
+
+    .qr{  
+      text-align: center;
+      align-self: center;
+      grid-column: 1;
+      grid-row: 3/5;
+    }
+
+    .info-border{
+      background-color: black;
+      grid-row: 5;
+      grid-column: 1/4;
     }
 
 
