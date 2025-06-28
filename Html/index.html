@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Css/index_Style.css">
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <script src="/Js/index_Script.js"></script>
     <title>Portafolio</title>
 </head>
 <body>
@@ -18,46 +19,56 @@
             <li class="sidebar_element">
                 <i class='bx  bxs-user-hexagon sidebar_logo'  ></i> 
                 <div class="sidebar_hide">
-                    <p class="sidebar_text">Sobre mi</p>
+                    <p class="sidebar_text" data-i18n="sidebar.sobre">Sobre mi</p>
                 </div>
             </li>
 
             <li class="sidebar_element">
                 <i class='bx  bxs-clipboard-code sidebar_logo' ></i>
                 <div class="sidebar_hide">
-                    <p class="sidebar_text">habilidades</p>
+                    <p class="sidebar_text" data-i18n="sidebar.habilidades">habilidades</p>
                 </div>
             </li>
 
             <li class="sidebar_element">
                 <i class='bx  bxs-star sidebar_logo' ></i> 
                 <div class="sidebar_hide">
-                    <p class="sidebar_text">Experiencia</p>
+                    <p class="sidebar_text" data-i18n="sidebar.experiencia">Experiencia</p>
                 </div>
             </li>
 
             <li class="sidebar_element">
                 <i class='bx  bxs-phone sidebar_logo'  ></i> 
                 <div class="sidebar_hide">
-                    <p class="sidebar_text">Contactame</p>
+                    <p class="sidebar_text" data-i18n="sidebar.contacto">Contactame</p>
                 </div>
             </li>
         </ul>
     </aside>
-    <section class="id_presentation">
+    <main class="main-content">
+        <div class="translate">
+            <button onclick="traducir('es')">Español</button>
+            <button onclick="traducir('en')">English</button>
+        </div>
+        
+        <section class="id_presentation">
+            <h2>Hola, me presento</h2>
         <div class="card">
             <div class="photo">
                 <img src="/img/6def31cd-2feb-4538-83e6-c28fdac675a3.jpeg" alt="">
             </div>
             <div class="qr"><img src="/img/Imagen de WhatsApp 2025-06-26 a las 01.54.31_d07527d6.jpg" alt="Codigo QR"></div>
-            <div class="info-name"><h1>Santiago B.</h1></div>
-            <div class=" info info-age"><p><strong>Edad</strong><br>22</p></div>
-            <div class=" info info-hobby"><p><strong>Pasatiempo</strong><br>Aprender</p></div>
-            <div class=" info info-title"><p><strong>Titulo</strong><br>Ingenieria informatica</p></div>
-            <div class="info-title-sticker"><span>en proceso</span><img src="/img/klipartz.com.png" alt="cinta"></div>
-            <div class=" info info-place"><p><strong>Lugar expedicion</strong><br>Medellin</p></div>
+            <div class="info-name"><h1 data-i18n="card.nombre">Santiago B.</h1></div>
+            <div class=" info info-age"><p><strong data-i18n="card.edad">Edad</strong><br>22</p></div>
+            <div class=" info info-hobby"><p><strong data-i18n="card.pasatiempo">Pasatiempo</strong><br><p data-i18n="card.pasatiempoHijo">Aprender</p></p></div>
+            <div class=" info info-title"><p ><strong data-i18n="card.titulo">Titulo</strong><br><p data-i18n="card.tituloHijo">Ingenieria informatica</p></p></div>
+            <div class="info-title-sticker"><span data-i18n="card.estado">en proceso</span><img src="/img/klipartz.com.png" alt="cinta"></div>
+            <div class=" info info-place"><p data-i18n="card.expedicion"><strong>Lugar expedicion</strong><br>Medellin/Colombia</p></div>
+            <div class="info-firm"><p data-i18n="card.firma"><strong>Firma</strong></p><img src="/img/Opera Captura de pantalla_2025-06-27_210948_www.canva.com-Photoroom.png" alt="Firma"></div>
             <div class="info-border"></div>
         </div>
     </section>
+    </main>
+    
 </body>
 </html>
