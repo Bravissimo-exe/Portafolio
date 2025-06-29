@@ -3,12 +3,15 @@
   box-sizing: border-box;
 }
 
+html{
+  overflow-x: hidden;
+}
+
 body{
   min-height: 100vh;
   display: grid;
-  align-items: center;
-  background-color: black;
-  grid-template-columns: 0.1fr 1fr;
+  background-color: rgb(26, 25, 25);
+  grid-template-columns: 12%  1fr;
 }
 
 .main-content{
@@ -16,19 +19,68 @@ body{
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 2fr 1fr 1fr;
+  
 }
 
 .translate{
-  height: 30px;
-  width: 60px;
+  width: 100%;
   grid-row: 1;
   grid-column: 2;
 }
 
+.welcome{
+  text-align: center;
+  color: white;
+  font-family: 'kg_perfect';
+  font-size: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.description{
+  margin-left: 5%;
+  width: 100%;
+  justify-content: center;
+  color: white;
+  font-family: 'kg_perfect';
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/*----------Fonts----------*/
+@font-face {
+  font-family: 'Mooncake';
+  src: url(/Fonts/moodcake/Moodcake.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'kg_perfect';
+  src: url(/Fonts/kg_perfect/KGPerfectPenmanship.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 /*----------Sidebar----------*/
-.sidebar{
-  position: sticky;
+nav{
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 10%;        /* ancho fijo de la barra */
+  height: 100vh;       /* altura de toda la pantalla */
+  display: flex;
+  align-items: center; 
+  z-index: 1000;
+}
+
+nav:hover{
+  width: 21%;
+}
+
+.sidebar{
   background-color: #ffffff;
   width: max-content;
   border-radius: 10px;
@@ -36,24 +88,27 @@ body{
 }
 
 .sidebar:hover .sidebar_element{
-  grid-template-columns: 50px 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .sidebar_list{
   list-style: none;
   padding: 0;
-  
+
   min-height: 600px;
   display: flex;
   flex-direction: column;
   gap: .4rem;
 }
+
 .sidebar_element{
+  font-family: 'kg_perfect';
+  font-size: 1em;
   padding: 1.9rem 1.3rem;
   border-radius: 20px;
   display: grid;
   align-items: center;
-  grid-template-columns: 80px 0fr;
+  grid-template-columns: 1fr 0fr;
   color: black;
 
   transition: grid-template-columns .4s;
@@ -73,7 +128,7 @@ body{
 .sidebar_icon--logo{
   display: flex;
   height: auto;
-  width: 130px;
+  width: 5rem;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -82,11 +137,13 @@ body{
 .sidebar_icon--logo .reveal{
   opacity: 1;
   z-index: 1;
+  max-width: 100%
 }
 
 .sidebar_content--logo .hide {
   opacity: 0;
   z-index: 2;
+  max-width: 100%
 }
 
 .sidebar_icon--logo.hide{
@@ -105,7 +162,7 @@ body{
 }
 
 .sidebar_logo{
-  font-size: 50px;
+  font-size: 3.125rem;
   margin: auto;
 }
 
@@ -114,35 +171,21 @@ body{
 }
 
 /*----------Card----------*/
-
-@font-face {
-  font-family: 'Mooncake';
-  src: url(/Fonts/moodcake/Moodcake.ttf);
-  font-weight: normal;
-  font-style: normal;
-}
-
 .id_presentation{
   grid-row: 1;
   justify-self: center;
 }
 
 .card{
-  
-  width: 500px;
-  height: 285px;
+  justify-self: center;
+  width: 31.25rem;
+  height: 17.813rem;
   background: white;
   border-radius: 15px;
   box-shadow: 0 20px 50px rgba(255, 255, 255, 0.3);
-  
   transition: transform 0.6s ease;
   transform-style: preserve-3d;
   border: 1px solid #333;
-  background: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0)), url('/img/eyeOpen.svg');
-  background-repeat: no-repeat;
-  background-position: center right;
-  background-size: 55%;
-  background-blend-mode: lighten;
   display: grid;
   grid-template-columns: 2fr 150px 150px;
   grid-template-rows: 80px 1fr 1fr 95px 1fr;
@@ -150,118 +193,119 @@ body{
 
 .card:hover {
   transform: rotateY(20deg) rotateX(20deg);
+
 }
-  .photo {
-    grid-row: 1;
-    grid-column: 1;
-    text-align: center;
-    padding: 20px;
-  }
 
-  .photo img {
-    width: 150px;
-    height: 150px;
-    border-radius: 15px;
-    object-fit: cover;
-  }
+.photo {
+  grid-row: 1;
+  grid-column: 1;
+  text-align: center;
+  padding: 20px;
+}
 
-  .info-name {
-    font-family: 'Mooncake';
-    grid-row: 1;
-    grid-column: 2/3;
-    font-size: 1.7em;
-    width: auto;
-    text-align: center;
-    margin: auto;
-    white-space: nowrap;
-  }
+.photo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+  object-fit: cover;
+}
 
-  .info{
-    font-size: 1em;
-    margin-bottom: 10px;
-    
-  }
+.info-name {
+  font-family: 'Mooncake';
+  grid-row: 1;
+  grid-column: 2/3;
+  font-size: 1.7em;
+  width: auto;
+  text-align: center;
+  margin: auto;
+  white-space: nowrap;
+}
 
-  .info-age{
-    grid-row: 2;
-    grid-column: 2;
-  }
-
-  .info-hobby{
-    grid-row: 2;
-    grid-column: 3;
-  }
-
-  .info-title{
-    grid-row: 3;
-    grid-column: 2;
-  }
+.info{
+  font-size: 1em;
+  margin-bottom: 10px;
   
-  .info-title-sticker{
-    position: relative;
-    width: 100px; /* ajusta según tamaño de la cinta */
-    height: 40px;
-    grid-column: 2; /* columna de la derecha */
-    grid-row: 2;     /* misma fila del título */
-    justify-self: end; /* alinea al inicio */
-    padding-left: 0.5rem;
-    padding-top: 0.7rem;
-  }
+}
 
-  .info-title-sticker img{
-    width: 60px;
-    rotate: -120deg;
-  }
+.info-age{
+  grid-row: 2;
+  grid-column: 2;
+}
 
-  .info-title-sticker span{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-65%, 100%);
-    font-weight: bold;
-    color: #333;
-    font-size: 0.9em;
-    font-family: 'Comic Sans MS', cursive;
-    z-index: 2;
-    white-space: nowrap;
-  }
+.info-hobby{
+  grid-row: 2;
+  grid-column: 3;
+}
 
-  .info-place{
-    grid-column: 3;
-    grid-row: 3;
-  }
+.info-title{
+  grid-row: 3;
+  grid-column: 2;
+}
 
-  .qr-firm {
-    
-    margin-top: auto;
-  }
+.info-title-sticker{
+  position: relative;
+  width: 100px; /* ajusta según tamaño de la cinta */
+  height: 40px;
+  grid-column: 2; /* columna de la derecha */
+  grid-row: 2;     /* misma fila del título */
+  justify-self: end; /* alinea al inicio */
+  padding-left: 0.5rem;
+  padding-top: 0.7rem;
+}
 
-  .qr img {
-    height: 50px;
-  }
+.info-title-sticker img{
+  width: 60px;
+  rotate: -120deg;
+}
 
-  .qr{  
-    text-align: center;
-    align-self: center;
-    grid-column: 1;
-    grid-row: 4;
-  }
+.info-title-sticker span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-65%, 100%);
+  font-weight: bold;
+  color: #333;
+  font-size: 0.9em;
+  font-family: 'Comic Sans MS', cursive;
+  z-index: 2;
+  white-space: nowrap;
+}
 
-  .info-firm img{
-    height: 80px;
-    padding-left: 3rem;
-  }
+.info-place{
+  grid-column: 3;
+  grid-row: 3;
+}
 
-  .info-firm{
-    grid-column: 2/3;
-    grid-row: 4;
-  }
+.qr-firm {
+  
+  margin-top: auto;
+}
 
-  .info-border{
-    background-color: black;
-    grid-row: 5;
-    grid-column: 1/4;
-    border-radius: 0 0 25px 35px;
-  }
+.qr img {
+  height: 50px;
+}
 
+.qr{  
+  text-align: center;
+  align-self: center;
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.info-firm img{
+  height: 80px;
+  padding-left: 3rem;
+}
+
+.info-firm{
+  grid-column: 2/3;
+  grid-row: 4;
+}
+
+.info-border{
+  background-color: black;
+  grid-row: 5;
+  grid-column: 1/4;
+  border-radius: 0 0 25px 35px;
+}
 

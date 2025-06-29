@@ -9,7 +9,8 @@
     <title>Portafolio</title>
 </head>
 <body>
-    <aside class="sidebar">
+    <nav>
+        <aside class="sidebar">
         <ul class="sidebar_list">
             <li class="  sidebar_content--logo">
                 <img class="sidebar_icon sidebar_icon--logo reveal" src="/img/eyeOpen.svg" alt="logo">
@@ -45,6 +46,8 @@
             </li>
         </ul>
     </aside>
+    </nav>
+    
     <main class="main-content">
         <div class="translate">
             <button onclick="traducir('es')">Español</button>
@@ -52,7 +55,10 @@
         </div>
         
         <section class="id_presentation">
-            <h2>Hola, me presento</h2>
+            <div>
+                <h2 class="welcome" data-i18n="saludo">Hola, me presento</h2>
+            </div>
+            
         <div class="card">
             <div class="photo">
                 <img src="/img/6def31cd-2feb-4538-83e6-c28fdac675a3.jpeg" alt="">
@@ -63,10 +69,15 @@
             <div class=" info info-hobby"><p><strong data-i18n="card.pasatiempo">Pasatiempo</strong><br><p data-i18n="card.pasatiempoHijo">Aprender</p></p></div>
             <div class=" info info-title"><p ><strong data-i18n="card.titulo">Titulo</strong><br><p data-i18n="card.tituloHijo">Ingenieria informatica</p></p></div>
             <div class="info-title-sticker"><span data-i18n="card.estado">en proceso</span><img src="/img/klipartz.com.png" alt="cinta"></div>
-            <div class=" info info-place"><p data-i18n="card.expedicion"><strong>Lugar expedicion</strong><br>Medellin/Colombia</p></div>
-            <div class="info-firm"><p data-i18n="card.firma"><strong>Firma</strong></p><img src="/img/Opera Captura de pantalla_2025-06-27_210948_www.canva.com-Photoroom.png" alt="Firma"></div>
+            <div class=" info info-place"><p><strong data-i18n="card.expedicion">Lugar expedicion</strong><br>Medellin/Colombia</p></div>
+            <div class="info-firm"><p><strong data-i18n="card.firma">Firma</strong></p><img src="/img/Opera Captura de pantalla_2025-06-27_210948_www.canva.com-Photoroom.png" alt="Firma"></div>
             <div class="info-border"></div>
+            
         </div>
+        <div class="description">
+            <h2data-i18n="saludo">soy un entusiasta de la programacion, amo aprender y aplicar ese conocimiento en la solucion de problemas reales</h2>
+        </div>
+        
     </section>
     </main>
     
