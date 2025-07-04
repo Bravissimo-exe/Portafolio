@@ -1,8 +1,9 @@
 /*----------Diccionario----------*/
 const traducciones ={
     es: {
-        saludo:{
-            saludo: "Hola, me presentosdsadas"
+        sobre_mi:{
+            saludo: "Hola, me presentosdsadas",
+            descripcion: "oy un entusiasta de la programacion, amo aprender y aplicar ese conocimiento en la solucion de problemas reales.  ZActualmente estudio en el politecnico jaime isaza cadavid en la carrera de ingeniero informatico, disfruto de solucionar problemas o \"chicharrones\""
         },
 
         sidebar:{
@@ -18,6 +19,11 @@ const traducciones ={
     },
 
     en:{
+        sobre_mi:{
+            saludo: "Hola, me presentosdsadas",
+            descripcion: "oy un entusiasta de la programacion, amo aprender y aplicar ese conocimiento en la solucion de problemas reales.  ZActualmente estudio en el politecnico jaime isaza cadavid en la carrera de ingeniero informatico, disfruto de solucionar problemas o \"chicharrones\""
+        },
+        
         sidebar:{
             sobre: "Sobre mi",
             habilidades: "Habilidades",
@@ -43,8 +49,17 @@ const traducciones ={
 }
 
 /*----------Traduccion----------*/
-function traducir(idioma) {
+function traducir() {
+    const checkBox = document.getElementById("lang-switch");
     const elementos = document.querySelectorAll('[data-i18n]');
+    const idioma = 'en';
+    if(checkBox.checked){
+        idioma = 'es';
+    }
+    else{
+        idioma = 'en';
+    }
+
     elementos.forEach(el =>{
         const clave = el.dataset.i18n;
         const partes = clave.split('.');
