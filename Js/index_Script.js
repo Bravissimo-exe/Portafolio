@@ -2,8 +2,8 @@
 const traducciones ={
     es: {
         sobre_mi:{
-            saludo: "Hola, me presentosdsadas",
-            descripcion: "oy un entusiasta de la programacion, amo aprender y aplicar ese conocimiento en la solucion de problemas reales.  ZActualmente estudio en el politecnico jaime isaza cadavid en la carrera de ingeniero informatico, disfruto de solucionar problemas o \"chicharrones\""
+            saludo: "Hola, me presento",
+            descripcion: "soy un entusiasta de la programacion, amo aprender y aplicar ese conocimiento en la solucion de problemas reales. Actualmente estudio en el politecnico jaime isaza cadavid en la carrera de ingeniero informatico, disfruto de solucionar problemas o \"chicharrones\""
         },
 
         sidebar:{
@@ -15,13 +15,17 @@ const traducciones ={
 
         card:{
             edad: "Edad",
+        },
+
+        experience:{
+            main_title: "Proyectos",
         }
     },
 
     en:{
         sobre_mi:{
-            saludo: "Hola, me presentosdsadas",
-            descripcion: "oy un entusiasta de la programacion, amo aprender y aplicar ese conocimiento en la solucion de problemas reales.  ZActualmente estudio en el politecnico jaime isaza cadavid en la carrera de ingeniero informatico, disfruto de solucionar problemas o \"chicharrones\""
+            saludo: "Hola, me inglich",
+            descripcion: "soy un entusiasta de la programacion, amo aprender y aplicar ese conocimiento en la solucion de problemas reales. Actualmente estudio en el politecnico jaime isaza cadavid en la carrera de ingeniero informatico, disfruto de solucionar problemas o \"chicharrones\""
         },
         
         sidebar:{
@@ -38,21 +42,29 @@ const traducciones ={
          card:{
             edad: "Edad",
             pasatiempo: "pasatiempo",
-            pasatiempoHijo: "dsdasds",
+            pasatiempoHijo: "aprender",
             titulo: "Titulo",
             tituloHijo: "Ingenieria informatica",
             estado: "en proceso",
             expedicion: "Lugar expedicion",
             firma: "Firma"
+        },
+
+         experience:{
+            main_title: "Projects",
         }
     }
 }
 
 /*----------Traduccion----------*/
+document.addEventListener("DOMContentLoaded", () => {
+    traducir();
+});
+
 function traducir() {
     const checkBox = document.getElementById("lang-switch");
     const elementos = document.querySelectorAll('[data-i18n]');
-    const idioma = 'en';
+    let idioma = 'en';
     if(checkBox.checked){
         idioma = 'es';
     }

@@ -25,16 +25,16 @@
             </li>
 
             <li class="sidebar_element">
-                <i class='bx  bxs-clipboard-code sidebar_logo' ></i>
+                <i class='bx  bxs-star sidebar_logo' ></i> 
                 <div class="sidebar_hide">
-                    <p class="sidebar_text" data-i18n="sidebar.habilidades">habilidades</p>
+                    <p class="sidebar_text" data-i18n="sidebar.experiencia">Experiencia</p>
                 </div>
             </li>
 
             <li class="sidebar_element">
-                <i class='bx  bxs-star sidebar_logo' ></i> 
+                <i class='bx  bxs-clipboard-code sidebar_logo' ></i>
                 <div class="sidebar_hide">
-                    <p class="sidebar_text" data-i18n="sidebar.experiencia">Experiencia</p>
+                    <p class="sidebar_text" data-i18n="sidebar.habilidades">habilidades</p>
                 </div>
             </li>
 
@@ -52,7 +52,7 @@
        
         <div class="translate">
             <p>EN</p>
-            <input type="checkbox" id="lang-switch">
+            <input type="checkbox" id="lang-switch" onchange="traducir()">
             <label for="lang-switch" class="lbl-lang"></label>
             <p>ES</p>
         </div>
@@ -81,11 +81,18 @@
                 <h3 data-i18n="sobre_mi.descripcion">soy un entusiasta de la programacion, amo aprender y aplicar ese conocimiento en la solucion de problemas reales.  
                 Actualmente estudio en el politecnico jaime isaza cadavid en la carrera de ingeniero informatico, disfruto de solucionar problemas o "chicharrones"</h3>
             </div>
+        </section>
 
-            <div class="about-me">
-                
+        <section class="experience">
+            <div class="container-projects">
+                <h2 data-i18n="experience.main_title">Proyectos</h2>
+                <a href="https://a1aelectricsigns.com/index_es.html">
+                    <div class="card-projects">
+                        <h3>Landing page A1A</h3>
+                        <img src="/img/A1A_page.png" alt="A1A page">
+                    </div>
+                </a>
             </div>
-            
         </section>
     </main>
     
