@@ -19,7 +19,11 @@ const traducciones ={
 
         experience:{
             main_title: "Proyectos",
-        }
+            proyect1_description: "Landing page para una empresa dedicada a carteles, hecha con html, css javascript y para los carruseles bootsrap.",
+            proyect2_description: "PastelApp es una aplicacion que estoy desarrollando actualmente, desarrollado con android studio y java."
+        },
+
+        
     },
 
     en:{
@@ -52,6 +56,8 @@ const traducciones ={
 
          experience:{
             main_title: "Projects",
+            proyect1_description: "Landing page para una empresa dedicada a carteles, hecha con html, css javascript y para los carruseles bootsrap.",
+            proyect2_description: "PastelApp es una aplicacion que estoy desarrollando actualmente, desarrollado con android studio y java."
         }
     }
 }
