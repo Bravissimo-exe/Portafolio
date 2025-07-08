@@ -359,7 +359,7 @@ nav:hover{
 
 .experience{
   grid-row: 2;
-  margin-top: 20%;
+  margin-top: 10%;
 }
 
 .container_projects{
@@ -461,10 +461,10 @@ nav:hover{
   border-radius: 15px;
   justify-self: center;
   background-color: #333;
-  width: 90%;
+  width: 70%;
   height: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .skill_title{
@@ -475,25 +475,51 @@ nav:hover{
 }
 
 .skills_card_container{
+  gap: 0.8rem;
+  padding-bottom: 1rem;
   align-items: center;
-  padding-left: 20px;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .skill_card{
   border-radius: 100px;
   width: 100px;
   height: 100px;
-  background-color: yellow;
   text-align: center;
   align-content: center;
-  
 }
 
 .skill_card img{
   width: 50%;
 }
 
+.js{
+  background-color: yellow;
+}
 
+.html{
+  background-color: #e34d25;
+}
+
+.css{
+  background-color: #369ad6;
+}
+
+.java{
+  background-color: white;
+}
+
+.bootstrap{
+  background-color: #ddc6ff;
+}
+
+.C{
+  background-color: #017aff;
+}
 
 /*----------Mediaquery----------*/
 
