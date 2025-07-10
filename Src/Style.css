@@ -616,7 +616,7 @@ nav:hover{
   }
 
   .card-PastelApp-sticker span{
-    position: absolute;        /* ✅ Para ubicar el texto encima de la cinta */
+    position: absolute;        /* hpt
     top: 35%;                  /* ✅ Centrado verticalmente */
     left: 50%;                 /* ✅ Centrado horizontalmente */
     transform: translate(-40%, 100%); /* ✅ Ajusta posición fina sobre la cinta */
