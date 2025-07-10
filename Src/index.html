@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/index_Style.css">
+    <link rel="stylesheet" href="/Src/index_Style.css">
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
     <script src="/Src/index_Script.js"></script>
@@ -14,37 +14,45 @@
         <aside class="sidebar">
         <ul class="sidebar_list">
             <li class="  sidebar_content--logo">
-                <img class="sidebar_icon sidebar_icon--logo reveal" src="/img/eyeOpen.svg" alt="logo">
-                <img class="sidebar_icon sidebar_icon--logo hide" src="/img/eyeClose.svg" alt="logo">
+                <img class="sidebar_icon sidebar_icon--logo reveal" src="/Src/img/eyeOpen.svg" alt="logo">
+                <img class="sidebar_icon sidebar_icon--logo hide" src="/Src/img/eyeClose.svg" alt="logo">
             </li>
 
-            <li class="sidebar_element">
-                <i class='bx  bxs-user-hexagon sidebar_logo'  ></i> 
-                <div class="sidebar_hide">
-                    <p class="sidebar_text" data-i18n="sidebar.sobre">Sobre mi</p>
-                </div>
-            </li>
+            <a href="#id_presentation">
+                <li class="sidebar_element">
+                    <i class='bx  bxs-user-hexagon sidebar_logo'  ></i> 
+                    <div class="sidebar_hide">
+                        <p class="sidebar_text" data-i18n="sidebar.sobre">Sobre mi</p>
+                    </div>
+                </li>
+            </a>
 
-            <li class="sidebar_element">
-                <i class='bx  bxs-star sidebar_logo' ></i> 
-                <div class="sidebar_hide">
-                    <p class="sidebar_text" data-i18n="sidebar.experiencia">Experiencia</p>
-                </div>
-            </li>
+            <a href="#experience">
+                <li class="sidebar_element">
+                    <i class='bx  bxs-star sidebar_logo' ></i> 
+                    <div class="sidebar_hide">
+                        <p class="sidebar_text" data-i18n="sidebar.experiencia">Experiencia</p>
+                    </div>
+                </li>
+            </a>
 
-            <li class="sidebar_element">
-                <i class='bx  bxs-clipboard-code sidebar_logo' ></i>
-                <div class="sidebar_hide">
-                    <p class="sidebar_text" data-i18n="sidebar.habilidades">habilidades</p>
-                </div>
-            </li>
+            <a href="#skills">
+                <li class="sidebar_element">
+                    <i class='bx  bxs-clipboard-code sidebar_logo' ></i>
+                    <div class="sidebar_hide">
+                        <p class="sidebar_text" data-i18n="sidebar.habilidades">habilidades</p>
+                    </div>
+                </li>
+            </a>
 
-            <li class="sidebar_element">
-                <i class='bx  bxs-phone sidebar_logo'  ></i> 
-                <div class="sidebar_hide">
-                    <p class="sidebar_text" data-i18n="sidebar.contacto">Contactame</p>
-                </div>
-            </li>
+            <a href="#contact_me">
+                <li class="sidebar_element">
+                    <i class='bx  bxs-phone sidebar_logo'  ></i> 
+                    <div class="sidebar_hide">
+                        <p class="sidebar_text" data-i18n="sidebar.contacto">Contactame</p>
+                    </div>
+                </li>
+            </a>
         </ul>
     </aside>
     </nav>
@@ -58,23 +66,23 @@
             <p>ES</p>
         </div>
 
-        <section class="id_presentation">
+        <section id="id_presentation">
             <div class="welcome">
                 <h2 data-i18n="sobre_mi.saludo">Hola, me presento</h2>
             </div>
             
             <div class="card">
                 <div class="photo">
-                    <img src="/img/6def31cd-2feb-4538-83e6-c28fdac675a3.jpeg" alt="">
+                    <img src="/Src/img/6def31cd-2feb-4538-83e6-c28fdac675a3.jpeg" alt="">
                 </div>
-                <div class="qr"><img src="/img/Imagen de WhatsApp 2025-06-26 a las 01.54.31_d07527d6.jpg" alt="Codigo QR"></div>
+                <div class="qr"><img src="/Src/img/Imagen de WhatsApp 2025-06-26 a las 01.54.31_d07527d6.jpg" alt="Codigo QR"></div>
                 <div class="info-name"><h1 data-i18n="card.nombre">Santiago B.</h1></div>
                 <div class=" info info-age"><p><strong data-i18n="card.edad">Edad</strong><br>22</p></div>
-                <div class=" info info-hobby"><p><strong data-i18n="card.pasatiempo">Pasatiempo</strong><br><p data-i18n="card.pasatiempoHijo">Aprender</p></p></div>
-                <div class=" info info-title"><p ><strong data-i18n="card.titulo">Titulo</strong><br><p data-i18n="card.tituloHijo">Ingenieria informatica</p></p></div>
-                <div class="info-title-sticker"><span data-i18n="card.estado">en proceso</span><img src="/img/klipartz.com.png" alt="cinta"></div>
+                <div class=" info info-hobby"><p><strong data-i18n="card.pasatiempo">Pasatiempo</strong><br><span data-i18n="card.pasatiempoHijo">Aprender</span></p></div>
+                <div class=" info info-title"><p class="titulo_coso"><strong data-i18n="card.titulo">Titulo</strong></p><br><span data-i18n="card.tituloHijo">Ingenieria informatica</span></div>
+                <div class="info-title-sticker"><span data-i18n="card.estado">en proceso</span><img src="/Src/img/klipartz.com.png" alt="cinta"></div>
                 <div class=" info info-place"><p><strong data-i18n="card.expedicion">Lugar expedicion</strong><br>Medellin/Colombia</p></div>
-                <div class="info-firm"><p><strong data-i18n="card.firma">Firma</strong></p><img src="/img/Opera Captura de pantalla_2025-06-27_210948_www.canva.com-Photoroom.png" alt="Firma"></div>
+                <div class="info-firm"><p><strong data-i18n="card.firma">Firma</strong></p><img src="/Src/img/Opera Captura de pantalla_2025-06-27_210948_www.canva.com-Photoroom.png" alt="Firma"></div>
                 <div class="info-border"></div>
                 
             </div>
@@ -84,25 +92,25 @@
             </div>
         </section>
 
-        <section class="experience">
+        <section id="experience">
             <div class="container_projects">
                 <h2 class="project_title" data-i18n="experience.main_title">Proyectos</h2>
                 <div class="card_container">
                     <a href="https://a1aelectricsigns.com/index_es.html" target="_blank">
                     <div class="card_projects">
                         <h3>Landing page A1A</h3>
-                        <img src="/img/A1A_page.png" alt="A1A page">
+                        <img src="/Src/img/A1A_page.png" alt="A1A page">
                         <p data-i18n="experience.proyect1_description">Landing page para una empresa dedicada a carteles, hecha con html, css javascript y para los carruseles bootsrap.</p>
                     </div>
                     </a>
                 </div>
 
                 <div class="card_container">
-                    <a href="https://a1aelectricsigns.com/index_es.html" target="_blank">
+                    <a href="https://github.com/Bravissimo-exe/PastelApp" target="_blank">
                     <div class="card_projects">
                         <h3>PastelApp</h3>
-                        <div class="card-PastelApp-sticker"><span data-i18n="card.estado">en proceso</span><img src="/img/klipartz.com.png" alt="cinta"></div>
-                        <img src="/img/PastelApp.png" alt="A1A page">
+                        <div class="card-PastelApp-sticker"><span data-i18n="card.estado">en proceso</span><img src="/Src/img/klipartz.com.png" alt="cinta"></div>
+                        <img src="/Src/img/PastelApp.png" alt="A1A page">
                         <p data-i18n="experience.proyect2_description">PastelApp es una aplicacion que estoy desarrollando actualmente, desarrollado con android studio y java.</p>
                     </div>
                     </a>
@@ -111,36 +119,36 @@
             </div>
         </section>
 
-        <section class="skills">
+        <section id="skills">
             <div class="skills_container">
-                <h2 class="skill_title">Skills</h2>
+                <h2 class="skill_title" data-i18n="skills.title">Skills</h2>
 
                 <div class="skills_card_container">
                     <div class="skill_card html">
-                        <img src="/img/Opera Captura de pantalla_2025-07-08_002914_www.pngwing.com.png" alt="">
+                        <img src="/Src/img/Opera Captura de pantalla_2025-07-08_002914_www.pngwing.com.png" alt="">
                     </div>
                     <div class="skill_card js">
-                        <img src="/img/pngwing.com (36).png" alt="">
+                        <img src="/Src/img/pngwing.com (36).png" alt="">
                     </div>
                     <div class="skill_card css">
-                        <img src="/img/Opera Captura de pantalla_2025-07-08_003919_www.pngwing.com.png" alt="">
+                        <img src="/Src/img/Opera Captura de pantalla_2025-07-08_003919_www.pngwing.com.png" alt="">
                     </div>
                     <div class="skill_card java">
-                        <img src="/img/Opera Captura de pantalla_2025-07-08_004220_www.pngwing.com-Photoroom.png" alt="">
+                        <img src="/Src/img/Opera Captura de pantalla_2025-07-08_004220_www.pngwing.com-Photoroom.png" alt="">
                     </div>
                     <div class="skill_card bootstrap">
-                        <img src="/img/pngwing.com (38).png" alt="">
+                        <img src="/Src/img/pngwing.com (38).png" alt="">
                     </div>
                     <div class="skill_card C">
-                        <img src="/img/Opera Captura de pantalla_2025-07-08_004852_www.google.com.png" alt="">
+                        <img src="/Src/img/Opera Captura de pantalla_2025-07-08_004852_www.google.com.png" alt="">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="contact_me">
+        <section id="contact_me">
             <div class="contact_container">
-                <h2 class="contact_title">Contact me</h2>
+                <h2 class="contact_title" data-i18n="contact.title">Contact me</h2>
                 <div class="contact_links">
                     <a href="tel:+573022289315" target="_blank"><i class='bxr  bxs-phone'  ></i></a>
                     <a href="mailto:santiagobp-12@hotmail.com" target="_blank"><i class='bxr  bxs-envelope'  ></i></a>
@@ -150,5 +158,8 @@
             </div>
         </section>
     </main>
+    <footer>
+        
+    </footer>
 </body>
 </html>

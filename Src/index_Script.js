@@ -23,6 +23,13 @@ const traducciones ={
             proyect2_description: "PastelApp es una aplicacion que estoy desarrollando actualmente, desarrollado con android studio y java."
         },
 
+        skills:{
+            title: "habilidades"
+        },
+
+        contact:{
+            title: "contactame"
+        }
         
     },
 
@@ -43,7 +50,8 @@ const traducciones ={
             expedicion: "Lugar expedicion",
             firma: "Firma"
         },
-         card:{
+
+        card:{
             edad: "Edad",
             pasatiempo: "pasatiempo",
             pasatiempoHijo: "aprender",
@@ -54,10 +62,18 @@ const traducciones ={
             firma: "Firma"
         },
 
-         experience:{
+        experience:{
             main_title: "Projects",
             proyect1_description: "Landing page para una empresa dedicada a carteles, hecha con html, css javascript y para los carruseles bootsrap.",
             proyect2_description: "PastelApp es una aplicacion que estoy desarrollando actualmente, desarrollado con android studio y java."
+        },
+
+        skills:{
+            title: "habilidades"
+        },
+
+        contact:{
+            title: "contactame"
         }
     }
 }
