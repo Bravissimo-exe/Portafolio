@@ -105,4 +105,29 @@ function traducir() {
 
         if(texto) el.textContent = texto;
     })
+
+
+    /*----------CardRotable----------*/
+
+     const section = document.getElementById('id_presentation');
+    const rotatable = section.querySelector('.card');
+
+    section.addEventListener('mousemove', (e) => {
+      const bounds = section.getBoundingClientRect();
+
+      const offsetX = e.clientX - bounds.left;
+      const offsetY = e.clientY - bounds.top;
+
+      const centerX = bounds.width / 2;
+      const centerY = bounds.height / 2;
+
+      const rotateX = -((offsetY - centerY) / centerY) * 40;
+      const rotateY = ((offsetX - centerX) / centerX) * 40;
+
+      rotatable.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    });
+
+    section.addEventListener('mouseleave', () => {
+      rotatable.style.transform = `rotateX(0deg) rotateY(0deg)`;
+    });
 }

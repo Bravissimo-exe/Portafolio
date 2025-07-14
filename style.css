@@ -79,14 +79,14 @@ body{
 
 @font-face {
   font-family: 'Mooncake';
-  src: url(/Src/Fonts/moodcake/Moodcake.ttf);
+  src: url(/Fonts/moodcake/Moodcake.ttf);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'kg_perfect';
-  src: url(/Src/Fonts/kg_perfect/KGPerfectPenmanship.ttf);
+  src: url(/Fonts/kg_perfect/KGPerfectPenmanship.ttf);
   font-weight: normal;
   font-style: normal;
 }
@@ -220,7 +220,7 @@ nav:hover{
 }
 
 .card:hover {
-  transform: rotateY(20deg) rotateX(20deg);
+  /*transform: rotateY(20deg) rotateX(20deg);*/
 
 }
 
