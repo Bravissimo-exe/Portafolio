@@ -219,10 +219,16 @@ nav:hover{
   grid-template-rows: 80px 1fr 1fr 95px 1fr;
 }
 
-.card:hover {
-  /*transform: rotateY(20deg) rotateX(20deg);*/
-
+#toggle:checked ~ body{
+  background-color: #017aff;
 }
+
+.card:hover {
+  transform: rotateY(20deg) rotateX(20deg);
+  
+}
+
+
 
 .photo {
   grid-row: 1;
@@ -465,7 +471,7 @@ nav:hover{
   border-radius: 15px;
   justify-self: center;
   background-color: #333;
-  width: 70%;
+  width: auto;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -483,7 +489,7 @@ nav:hover{
   gap: 0.8rem;
   padding-bottom: 1rem;
   align-items: center;
-  
+  margin: 10px 15px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -538,7 +544,7 @@ nav:hover{
   justify-self: center;
   align-items: center;
   background-color: #333;
-  width: 40%;
+  width: auto;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -604,28 +610,30 @@ nav:hover{
   
 
   .info-title-sticker {
+    position: relative;
     grid-column: 1;
-    grid-row: auto;
-    justify-self: center;
-    padding: 0;
-    width: 80px;
+    grid-row: 3;
+    justify-self: start;
+    padding-left: 4rem;
+    padding-top: 1.8rem;
+    width: auto;
+    
   }
 
   .info-title-sticker img {
-    width: 100%;
-    rotate: -90deg;
+    width: 50px;
+    left: 70%;
   }
 
-  .card-PastelApp-sticker span{
-    position: absolute;        /* hpt
-    top: 35%;                  /* ✅ Centrado verticalmente */
-    left: 50%;                 /* ✅ Centrado horizontalmente */
-    transform: translate(-40%, 100%); /* ✅ Ajusta posición fina sobre la cinta */
-    rotate: 27deg;             /* ✅ Conserva el efecto visual inclinado */
-    font-weight: bold;
+  .info-title-sticker span{
+    position: absolute;        
+    top: 130%;                  /* ✅ Centrado verticalmente */
+    left: 70%;                 /* ✅ Centrado horizontalmente */
+    transform: translate(-40%, 0%); /* ✅ Ajusta posición fina sobre la cinta */ 
     color: #333;
-    font-size: clamp(0.7rem, 3vw, 2rem); /* ✅ Hace la fuente responsiva */
-    font-family: 'Comic Sans MS', cursive;
+    font-size: clamp(0.7rem, 1vw, 1rem); /* ✅ Hace la fuente responsiva */
+    font-family: "Knewave", system-ui;
+    font-weight: 200;
     white-space: nowrap;
     z-index: 1;
   }
@@ -706,6 +714,18 @@ nav:hover{
     height: 10px;
   }
 
+  /*----------Skills----------*/
+
+  .skills_container{
+  border-radius: 15px;
+  justify-self: center;
+  background-color: #333;
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  }
+
   /*----------Contact----------*/
 
   .contact_container{
@@ -742,7 +762,7 @@ nav:hover{
     font-weight: bold;
     color: #333;
     font-size: clamp(0.7rem, 3vw, 2rem); /* ✅ Hace la fuente responsiva */
-    font-family: 'Comic Sans MS';
+    font-family: "Knewave", system-ui;
     white-space: nowrap;
     z-index: 1;
   }
