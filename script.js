@@ -2,25 +2,34 @@
 const traducciones ={
     es: {
         sobre_mi:{
-            saludo: "Hola, me presento",
-            descripcion: "soy un entusiasta de la programacion, amo aprender y aplicar ese conocimiento en la solucion de problemas reales. Actualmente estudio en el politecnico jaime isaza cadavid en la carrera de ingeniero informatico, disfruto de solucionar problemas o \"chicharrones\""
+            saludo: "Hola, soy",
+            descripcion: "Hola, me llamo Santiago Bravo Pareja, soy estudiante de ingeniería informática en el Politécnico Jaime Isaza Cadavid. Soy entusiasta por la programación, me encanta aprender y aplicar mis conocimientos a la resolución de problemas. "
         },
 
         sidebar:{
             sobre: "Sobre mi",
             habilidades: "Habilidades",
             experiencia: "Experiencia",
-            contacto: "Contactame"
+            contacto: "Contacto"
         },
 
         card:{
             edad: "Edad",
+            pasatiempo: "Pasatiempo",
+            pasatiempoHijo: "Aprender",
+            titulo: "Titulo",
+            tituloHijo: "Ingenieria informatica",
+            estado: "En proceso",
+            expedicion: "Lugar de expedicion",
+            firma: "Firma"
         },
 
         experience:{
             main_title: "Proyectos",
-            proyect1_description: "Landing page para una empresa dedicada a carteles, hecha con html, css javascript y para los carruseles bootsrap.",
-            proyect2_description: "PastelApp es una aplicacion que estoy desarrollando actualmente, desarrollado con android studio y java."
+            proyect1_description: "Landing page para una empresa especializada en diseñar y hacer carteles. Utilizando HTML, CSS, JavaScript. Para la realización de carruseles se utilizó Bootstrap.",
+            proyect2_description: "PastelApp es una aplicación de mi autoría, me encuentro trabajando en ella, está diseñada con Android Studio y Java.",
+            proyect3_description: "Mouse of the magus es un pequeño juego producto de un proyecto en conjunto para una asignatura, desarrollada en unity con C# y en conjunto con un equipo de trabajo",
+            proyect4_description: "Fary requiem es un demo producto de un proyecto en conjunto para una asignatura, desarrollada en unity con C# y en conjunto con un equipo de trabajo conformado tanto por artistas como por desarrolladores"
         },
 
         skills:{
@@ -35,45 +44,42 @@ const traducciones ={
 
     en:{
         sobre_mi:{
-            saludo: "Hola, me inglich",
-            descripcion: "soy un entusiasta de la programacion, amo aprender y aplicar ese conocimiento en la solucion de problemas reales. Actualmente estudio en el politecnico jaime isaza cadavid en la carrera de ingeniero informatico, disfruto de solucionar problemas o \"chicharrones\""
+            saludo: "Hi, i am",
+            descripcion: "Hello, my name is Santiago Bravo Pareja. I am a Computer Engineering student at the Politécnico Jaime Isaza Cadavid. I am enthusiastic about programming, and I find joy learning and applying that knowledge to solve problems."
         },
         
         sidebar:{
-            sobre: "Sobre mi",
-            habilidades: "Habilidades",
-            experiencia: "Experiencia",
-            contacto: "Contactame",
-            titulo: "Titulo",
-            tituloHijo: "Ingenieria informatica",
-            estado: "en proceso",
-            expedicion: "Lugar expedicion",
-            firma: "Firma"
+            sobre: "About me",
+            habilidades: "Skills",
+            experiencia: "Experience",
+            contacto: "Contact me",
         },
 
         card:{
-            edad: "Edad",
-            pasatiempo: "pasatiempo",
-            pasatiempoHijo: "aprender",
-            titulo: "Titulo",
+            edad: "Age",
+            pasatiempo: "Hobby",
+            pasatiempoHijo: "Learn",
+            titulo: "Title",
             tituloHijo: "Ingenieria informatica",
-            estado: "en proceso",
-            expedicion: "Lugar expedicion",
-            firma: "Firma"
+            estado: "in process",
+            expedicion: "place of dispatch",
+            firma: "Firm"
         },
 
         experience:{
             main_title: "Projects",
-            proyect1_description: "Landing page para una empresa dedicada a carteles, hecha con html, css javascript y para los carruseles bootsrap.",
-            proyect2_description: "PastelApp es una aplicacion que estoy desarrollando actualmente, desarrollado con android studio y java."
+            proyect1_description: "Landing page for a company specialized in posters, created with HTML, CSS, JavaScript, and Bootstrap for the carousels.",
+            proyect2_description: "PastelApp is an application that I am currently developing. Built with Android Studio and Java.",
+            proyect3_description: "Mouse of the Magus is a small game, the product of a joint project for a subject, developed in Unity with C# and together with a work team.",
+            proyect4_description: "Fary requiem es un demo producto de un proyecto en conjunto para una asignatura, desarrollada en unity con C# y en conjunto con un equipo de trabajo conformado tanto por artistas como por desarrolladores"
         },
 
         skills:{
-            title: "habilidades"
+            title: "Skills"
         },
 
         contact:{
-            title: "contactame"
+            title: "Contact me"
         }
     }
 }
