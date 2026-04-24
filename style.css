@@ -79,14 +79,14 @@ body{
 
 @font-face {
   font-family: 'Mooncake';
-  src: url(/Fonts/moodcake/Moodcake.ttf);
+  src: url(Fonts/moodcake/Moodcake.ttf);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'kg_perfect';
-  src: url(/Fonts/kg_perfect/KGPerfectPenmanship.ttf);
+  src: url(Fonts/kg_perfect/KGPerfectPenmanship.ttf);
   font-weight: normal;
   font-style: normal;
 }
