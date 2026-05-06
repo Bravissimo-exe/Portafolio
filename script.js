@@ -113,3 +113,16 @@ function traducir() {
     })
     
 }
+
+//Update age
+document.addEventListener("DOMContentLoaded", () => {
+    let birthday = new Date(2003, 2, 12);
+    const date = new Date();
+
+    let yearDiff = date.getFullYear() - birthday.getFullYear();
+    
+    if(date.getMonth() < birthday.getMonth() || (date.getMonth() === birthday.getMonth() && date.getDate() < birthday.getDate())){
+        yearDiff--;
+    }
+    document.getElementById("age").textContent = yearDiff;
+});

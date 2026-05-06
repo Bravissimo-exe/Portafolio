@@ -249,6 +249,7 @@ nav:hover{
   grid-row: 1;
   grid-column: 2/3;
   width: auto;
+  font-size: 1.2em;
   text-align: center;
   margin: auto;
   white-space: nowrap;
