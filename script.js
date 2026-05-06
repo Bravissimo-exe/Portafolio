@@ -1,3 +1,8 @@
+document.addEventListener("DOMContentLoaded", () => {
+    traducir();
+    UpdateAge();
+});
+
 /*----------Diccionario----------*/
 const traducciones ={
     es: {
@@ -85,10 +90,6 @@ const traducciones ={
 }
 
 /*----------Traduccion----------*/
-document.addEventListener("DOMContentLoaded", () => {
-    traducir();
-});
-
 function traducir() {
     const checkBox = document.getElementById("lang-switch");
     const elementos = document.querySelectorAll('[data-i18n]');
@@ -115,7 +116,7 @@ function traducir() {
 }
 
 //Update age
-document.addEventListener("DOMContentLoaded", () => {
+function UpdateAge(){
     let birthday = new Date(2003, 2, 12);
     const date = new Date();
 
@@ -125,4 +126,4 @@ document.addEventListener("DOMContentLoaded", () => {
         yearDiff--;
     }
     document.getElementById("age").textContent = yearDiff;
-});
+}
