@@ -276,6 +276,10 @@ nav:hover{
   grid-column: 2;
 }
 
+.title-name{
+  text-align: center;
+}
+
 .info-title-sticker{
   position: relative;
   width: 100px; /* ajusta según tamaño de la cinta */
