@@ -34,7 +34,8 @@ const traducciones ={
             proyect1_description: "Landing page para una empresa especializada en diseñar y hacer carteles. Utilizando HTML, CSS, JavaScript. Para la realización de carruseles se utilizó Bootstrap.",
             proyect2_description: "PastelApp es una aplicación de mi autoría, me encuentro trabajando en ella, está diseñada con Android Studio y Java.",
             proyect3_description: "Mouse of the magus es un pequeño juego producto de un proyecto en conjunto para una asignatura, desarrollada en unity con C# y en conjunto con un equipo de trabajo",
-            proyect4_description: "Fary requiem es un demo producto de un proyecto en conjunto para una asignatura, desarrollada en unity con C# y en conjunto con un equipo de trabajo conformado tanto por artistas como por desarrolladores"
+            proyect4_description: "Fary requiem es un demo producto de un proyecto en conjunto para una asignatura, desarrollada en unity con C# y en conjunto con un equipo de trabajo conformado tanto por artistas como por desarrolladores",
+            proyect5_description: "Balance es un minijuego 3D desarrollado en Unreal Engine por mí, como único programador, junto a un equipo de artistas encargados en el diseño de personajes y escenario. Dentro del juego, se  implementó un control físico con giroscopio, acompañado de un ESP32 y un módulo MPU5060. Como alternativa a este, se hace también uso de dispositivos móviles, aprovechando el giroscopio y acelerómetro dentro de ellos."
         },
 
         skills:{
@@ -76,7 +77,8 @@ const traducciones ={
             proyect1_description: "Landing page for a company specialized in posters, created with HTML, CSS, JavaScript, and Bootstrap for the carousels.",
             proyect2_description: "PastelApp is an application that I am currently developing. Built with Android Studio and Java.",
             proyect3_description: "Mouse of the Magus is a small game, the product of a joint project for a subject, developed in Unity with C# and together with a work team.",
-            proyect4_description: "Fary requiem es un demo producto de un proyecto en conjunto para una asignatura, desarrollada en unity con C# y en conjunto con un equipo de trabajo conformado tanto por artistas como por desarrolladores"
+            proyect4_description: "Fary requiem es un demo producto de un proyecto en conjunto para una asignatura, desarrollada en unity con C# y en conjunto con un equipo de trabajo conformado tanto por artistas como por desarrolladores",
+            proyect5_description: "Balance is a 3D minigame developed in Unreal Engine by me as the sole programmer, alongside a team of artists responsible for character and environment design. Within the game, gyroscope-based motion controls were implemented using an ESP32 and an MPU5060 module. As an alternative to this control method, the game also supports mobile devices, utilizing their built-in gyroscopes and accelerometers."
         },
 
         skills:{

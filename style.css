@@ -276,6 +276,10 @@ nav:hover{
   grid-column: 2;
 }
 
+.info-title span{
+  
+}
+
 .title-name{
   text-align: center;
 }
@@ -288,17 +292,18 @@ nav:hover{
   grid-row: 2;     /* misma fila del título */
   justify-self: end; /* alinea al inicio */
   padding-left: 0.5rem;
-  padding-top: 0.7rem;
+  padding-top: 0.4rem;
 }
 
 .info-title-sticker img{
+  position: absolute;
   width: 60px;
   rotate: -120deg;
 }
 
 .info-title-sticker span{
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-65%, 100%);
   font-weight: bold;
@@ -344,6 +349,7 @@ nav:hover{
   background-color: black;
   grid-row: 5;
   grid-column: 1/4;
+  margin-top: 3%;
   border-radius: 0 0 25px 35px;
   height: 20px;
 }
